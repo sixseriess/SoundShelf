@@ -1,0 +1,32 @@
+{
+  "name": "soundshelf-player",
+  "version": "1.0.0",
+  "description": "A Liner-inspired desktop music library for Windows",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^35.0.0",
+    "electron-builder": "^26.0.12"
+  },
+  "build": {
+    "appId": "com.soundshelf.player",
+    "productName": "SoundShelf",
+    "files": [
+      "main.js",
+      "preload.js",
+      "index.html",
+      "README.md",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": "nsis"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

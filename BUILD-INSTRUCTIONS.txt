@@ -1,0 +1,12 @@
+SoundShelf Windows installer build
+
+This project now includes a GitHub Actions workflow that builds the Windows installer in a Windows cloud runner.
+
+One-time steps:
+1. Create a GitHub repository and upload the contents of this folder to it.
+2. Open the repository's Actions tab and enable Actions if prompted.
+3. Open "Build SoundShelf Windows Installer" and click "Run workflow" (if it did not run automatically on push).
+4. When the run finishes successfully, open the run and download the "SoundShelf-Windows-Setup" artifact.
+5. Extract that artifact ZIP; it contains the SoundShelf Setup .exe.
+
+The .exe has not been built inside this environment because npm package downloads are unavailable here. The workflow builds it on GitHub's Windows runner.
