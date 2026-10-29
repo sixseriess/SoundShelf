@@ -19,7 +19,8 @@
       "preload.js",
       "index.html",
       "README.md",
-      "assets/**/*"
+      "assets/**/*",
+      "node_modules/discord-rpc/**/*"
     ],
     "win": {
       "target": "nsis"
@@ -28,5 +29,8 @@
       "oneClick": false,
       "allowToChangeInstallationDirectory": true
     }
+  },
+  "dependencies": {
+    "discord-rpc": "^4.0.1"
   }
 }

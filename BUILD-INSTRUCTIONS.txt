@@ -1,12 +1,19 @@
-SoundShelf Windows installer build
+SOUNDSHELF WINDOWS BUILD
 
-This project now includes a GitHub Actions workflow that builds the Windows installer in a Windows cloud runner.
+1. Upload the CONTENTS of this folder to the root of your GitHub repository, including the hidden .github folder.
+2. Commit changes to the main branch.
+3. Open GitHub Actions and wait for Build SoundShelf Windows Installer to finish.
+4. Open the successful workflow run and download the SoundShelf-Windows-Setup artifact.
+5. Extract that downloaded artifact ZIP and run SoundShelf Setup.exe.
 
-One-time steps:
-1. Create a GitHub repository and upload the contents of this folder to it.
-2. Open the repository's Actions tab and enable Actions if prompted.
-3. Open "Build SoundShelf Windows Installer" and click "Run workflow" (if it did not run automatically on push).
-4. When the run finishes successfully, open the run and download the "SoundShelf-Windows-Setup" artifact.
-5. Extract that artifact ZIP; it contains the SoundShelf Setup .exe.
+PLAYBACK NOTES
+SoundShelf embeds YouTube, Spotify, Apple Music, SoundCloud, and some Deezer/Tidal links where those providers allow it. Some services require a login/subscription or may block embedded playback. The app does not bypass DRM, paywalls, regional blocks, or provider restrictions. Unsupported links stay in the app and show a message; external opening is an optional setting.
 
-The .exe has not been built inside this environment because npm package downloads are unavailable here. The workflow builds it on GitHub's Windows runner.
+DISCORD RICH PRESENCE
+1. Install/open Discord desktop and sign in.
+2. Go to https://discord.com/developers/applications and create an application called SoundShelf.
+3. Copy its Application ID from General Information.
+4. In SoundShelf, open Settings, enable Show what I'm listening to, paste the Application ID, and save.
+5. Keep Discord desktop running. Presence availability can depend on Discord privacy/activity settings.
+
+The Discord application may show text activity even without a custom uploaded image. For custom album artwork in Discord, an image asset must be uploaded to the Discord application and the code configured to use that asset key.
