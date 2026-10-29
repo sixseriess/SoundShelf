@@ -1,0 +1,15 @@
+SOUNDSHELF UI REDESIGN — GITHUB UPLOAD
+
+This is the editable project source, not a prebuilt Setup.exe.
+
+1. Extract this ZIP.
+2. Open the liner-inspired-player folder.
+3. In your existing GitHub repository, choose Add file > Upload files.
+4. Upload the CONTENTS of this folder, including the .github folder. Do not upload only the folder or ZIP.
+5. Commit changes. The workflow in .github/workflows/build-windows.yml should start automatically.
+6. In Actions, open the latest successful run and download the SoundShelf-Windows-Setup artifact.
+7. Extract that artifact and run SoundShelf Setup 1.0.0.exe.
+
+This redesign updates the home layout to match the supplied reference: left sidebar, three featured cards, recently played album grid, playlist cards, right-side Now Playing/Queue panel, and bottom playback bar. It preserves the existing library, playlists, link imports, embedded playback attempts, lyrics lookup, settings, and Discord Rich Presence wiring.
+
+Note: third-party services can restrict embedded playback. The project has not been verified in a completed Windows build from this environment.
